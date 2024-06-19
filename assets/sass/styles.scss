@@ -1,0 +1,54 @@
+/* FONTS IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@200..800&display=swap');
+
+// VARIABLES
+// - Colors
+$jaune : #FFD15B;
+$noir : #1B1B1B;
+
+// - Fonts
+$anton : "Anton", sans-serif;
+$manrope : "Manrope", sans-serif;
+
+
+.pageTop {
+
+    background: center / cover no-repeat url("../assets/backgroundImg.png");
+    height: 70vh;
+
+    .header {
+        height: 40%;
+
+        img {
+            margin: 2.5rem 2.5rem;
+            width: 15em;
+        }
+    }
+    .searchArea {
+
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        .searchAreaTitle {
+            font-family: $anton;
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 66.24px;
+            text-align: center;
+            color: $jaune;
+            width: 890px;
+        }
+
+        .search {
+            width: 954px;
+            height: 72px;
+            gap: 0px;
+            opacity: 0px;            
+        }
+    }
+
+}
+

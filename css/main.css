@@ -1,0 +1,37 @@
+/* FONTS IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@200..800&display=swap");
+.pageTop {
+  background: center/cover no-repeat url("../assets/backgroundImg.png");
+  height: 70vh;
+}
+.pageTop .header {
+  height: 40%;
+}
+.pageTop .header img {
+  margin: 2.5rem 2.5rem;
+  width: 15em;
+}
+.pageTop .searchArea {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.pageTop .searchArea .searchAreaTitle {
+  font-family: "Anton", sans-serif;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 66.24px;
+  text-align: center;
+  color: #FFD15B;
+  width: 890px;
+}
+.pageTop .searchArea .search {
+  width: 954px;
+  height: 72px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+/*# sourceMappingURL=main.css.map */

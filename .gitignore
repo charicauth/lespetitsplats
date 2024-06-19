@@ -1,0 +1,8 @@
+# FOLDERS
+    icons/
+    images/
+    node_modules/
+
+#FILES
+    /package-lock.json
+    /package.json
