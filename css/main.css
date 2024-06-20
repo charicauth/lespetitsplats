@@ -28,10 +28,22 @@
   width: 890px;
 }
 .pageTop .searchArea .search {
+  margin-top: 1.5rem;
   width: 954px;
   height: 72px;
   gap: 0px;
   opacity: 0px;
+  position: relative;
+}
+.pageTop .searchArea .search input {
+  padding: 1rem;
+}
+.pageTop .searchArea .search button {
+  position: absolute;
+  top: 0rem;
+  right: 1rem;
+  margin-top: 0.65rem;
+  background-color: #1B1B1B;
 }
 
 /*# sourceMappingURL=main.css.map */
