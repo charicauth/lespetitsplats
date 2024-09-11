@@ -5,11 +5,17 @@
 // - Colors
 $jaune : #FFD15B;
 $noir : #1B1B1B;
+$white : #ffffff;
+
 
 // - Fonts
 $anton : "Anton", sans-serif;
 $manrope : "Manrope", sans-serif;
 
+
+body {
+    background-color: rgba(128, 128, 128, 0.15);
+}
 
 .pageTop {
 
@@ -67,3 +73,88 @@ $manrope : "Manrope", sans-serif;
 
 }
 
+.search-filters {
+    
+    margin: auto;
+    width : 96%;
+    padding: 2rem 0rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    gap: 2rem;
+
+    .nb-recettes {
+        font-family: $anton;
+        text-align: right;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 31.61px;
+        margin-left: auto;
+    }
+
+    .custom-dropdown {
+        padding: 0rem 1rem;
+        display: flex;
+        flex-flow: row wrap;   
+        background-color: $white;
+        border-radius: 11px;
+        width: 9rem;
+        height: 56px;
+        width: 195px;
+        justify-content: space-between;
+        z-index: 0;
+        transition: height 0.4s ease; /* Progressive height change */
+        overflow: hidden;
+        cursor: pointer;
+
+        .filter {
+            width: 100%;
+            height: 55px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+
+        p {
+            width: 90%;
+            height: 55px;
+            margin-right: auto;
+            font-family: $manrope;
+        }
+        i {
+            width: 10%;
+            text-align: right;
+            margin-left: auto;
+        }
+    }
+
+    .custom-dropdown.open {
+        /* Increased height when open */
+        height: 315px; /* Adjust based on content size */
+    }
+  
+    .dropdown-options {
+        /* Ensure options are displayed in the increased height space */
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+  
+    .custom-dropdown.open .dropdown-options {
+        opacity: 1; /* Make options visible */
+    }
+}
+
+.search-results {
+
+    padding: 2rem;
+    
+    .card {
+        .card-img-top {
+            height: 253px;
+            text-align: center  !important;
+        }
+    }
+}
